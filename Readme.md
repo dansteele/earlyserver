@@ -1,0 +1,1 @@
+Simply rake create/migrate/seed and you're good to go.
