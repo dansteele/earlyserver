@@ -3,8 +3,11 @@ class Techlog
 
   def initialize(obj)
     @request = obj[:request]
-    binding.pry
-    to_controller_name(get_controller_name).invoke_action
+    @response = Rack::Response.new
+  end
+
+  def to_controller
+    to_controller_name(get_controller_name).new(request: request).invoke_action
   end
 
   def get_controller_name
