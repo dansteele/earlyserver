@@ -1,4 +1,4 @@
-class SitesController < Techlog
+class SiteController < Techlog
   def index
 
   end
