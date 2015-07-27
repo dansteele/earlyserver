@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "it should handle basic API requests" do
 
   before do
