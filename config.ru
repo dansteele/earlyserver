@@ -1,3 +1,3 @@
 require './config/environment'
 
-run Earlymarket::Techlog
+run App
