@@ -1,7 +1,6 @@
-class CreateSitesTable < ActiveRecord::Migration
+class CreateSites < ActiveRecord::Migration
   def change
-    create_table :sites_tables do |t|
-      t.string :sites
+    create_table :sites do |t|
       t.string :label
       t.string :value
       t.string :lat

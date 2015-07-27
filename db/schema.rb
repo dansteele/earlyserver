@@ -16,8 +16,7 @@ ActiveRecord::Schema.define(version: 20150727102755) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "sites_tables", force: :cascade do |t|
-    t.string "sites"
+  create_table "sites", force: :cascade do |t|
     t.string "label"
     t.string "value"
     t.string "lat"
