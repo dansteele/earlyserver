@@ -6,7 +6,7 @@ ActiveRecord::Base.establish_connection(
   YAML.load(File.read("db/config.yml"))[ENV["RACK_ENV"]]
 )
 
-require './config/requires'
+require './config/environment'
 require './app/app'
 
 run Earlymarket::Techlog

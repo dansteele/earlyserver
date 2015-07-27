@@ -1,4 +1,4 @@
 require 'pry'
-require './config/requires'
+require './config/environment'
 require 'rack/test'
 include Rack::Test::Methods
