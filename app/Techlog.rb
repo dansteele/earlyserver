@@ -3,6 +3,7 @@ class Techlog
 
   def initialize(obj)
     @request = obj[:request]
+    @request[:ids] = retrieve_ids
     @response = Rack::Response.new
   end
 
@@ -18,6 +19,14 @@ class Techlog
     @request.path.split("/")[2..-1]
   end
 
+  def retrieve_ids
+    useful_path.select.with_index do |item, index|
+      if item.is_i?
+        return {useful_path[index-1].to_sym => item} 
+      end
+    end
+  end
+
   def to_controller_name word
     (word.titleize + "Controller").constantize
   end
@@ -26,7 +35,7 @@ class Techlog
     # Assuming GET for now.
     # Header checks will go here.
     if useful_path.last.is_i?
-      self.send "show"
+      self.send "show", @request[:ids]
     else
       self.send "index"
     end
