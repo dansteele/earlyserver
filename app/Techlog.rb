@@ -41,4 +41,19 @@ class Techlog
     end
   end
 
+
+  def show
+    @response.status = 200
+    # Set headers
+    # etc
+    @response
+  end
+
+  def index
+    @response.status = 200
+    # Set headers
+    # etc
+    @response
+  end
+
 end
