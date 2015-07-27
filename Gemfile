@@ -14,6 +14,7 @@ gem 'rake'
 
 group :test do
   gem 'pry'
+  gem 'database_cleaner'
   gem 'rspec', '~> 3.1'
   gem 'rack-test', '~> 0.6.2'
   gem 'capybara', '~> 2.4.4'
