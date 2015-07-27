@@ -1,2 +1,4 @@
-require pry
-require 'config/requires'
+require 'pry'
+require './config/requires'
+require 'rack/test'
+include Rack::Test::Methods
