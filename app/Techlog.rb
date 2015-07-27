@@ -1,5 +1,12 @@
 class Techlog
+  attr_accessor :request
+
   def initialize(request)
-    binding.pry
+    @request = request
+  end
+
+
+  def parse
+    @request.path.split("/").slice(2)
   end
 end
