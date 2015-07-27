@@ -10,7 +10,7 @@ class App
 
     def send_to_target_app(request)
       @target_app = request.path.split("/")[1].titleize
-      @target_app.constantize.new(request: request)
+      @target_app.constantize.new(request: request).to_controller
     end
   end
 end
