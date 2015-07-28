@@ -18,7 +18,7 @@ end
 group :development, :test do
   gem 'pry'
   gem 'faker'
-  gem 'factory_girl'
+  gem "factory_girl", "~> 4.0"
 end
 
 group :test do
