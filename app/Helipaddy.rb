@@ -1,0 +1,2 @@
+class Helipaddy < App
+end
