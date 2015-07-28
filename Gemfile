@@ -11,9 +11,15 @@ gem 'active_record_migrations'
 gem 'pg'
 gem 'rake'
 
+group :development do
+end
+
+group :development, :test do
+  gem 'pry'
+  gem 'faker'
+end
 
 group :test do
-  gem 'pry'
   gem 'database_cleaner'
   gem 'rspec', '~> 3.1'
   gem 'rack-test', '~> 0.6.2'
