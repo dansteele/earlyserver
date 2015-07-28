@@ -11,12 +11,14 @@ gem 'active_record_migrations'
 gem 'pg'
 gem 'rake'
 
+
 group :development do
 end
 
 group :development, :test do
   gem 'pry'
   gem 'faker'
+  gem 'factory_girl'
 end
 
 group :test do
