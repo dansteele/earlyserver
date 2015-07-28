@@ -1,6 +1,6 @@
 Simply rake create/migrate/seed and you're good to go.
 
-Start with `rackup`
+Start with `rackup` (Recommend `(rerun)[https://github.com/alexch/rerun] rackup`)
 
 
 Try:
