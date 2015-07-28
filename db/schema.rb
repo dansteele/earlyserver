@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20150728092126) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "users"
     t.string "name"
   end
 

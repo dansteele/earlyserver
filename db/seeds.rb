@@ -7,6 +7,5 @@ SitesFixture::sites.each do |site|
 end
 
 20.times do
-  binding.pry
   create(:user)
 end
