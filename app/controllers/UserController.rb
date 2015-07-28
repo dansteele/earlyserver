@@ -1,17 +1,15 @@
-class SiteController < Techlog
+class UserController < Techlog
   def initialize obj
     super
   end
 
   def show(ids)
-    super
-    @response.status = 200
     @response.write User.find(ids[:site]).to_json
+    super
   end
 
   def index
-    super
-    @response.status = 200
     @response.write User.all.to_json
+    super
   end
 end
