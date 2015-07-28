@@ -12,7 +12,13 @@ Dir[File.expand_path('../../lib/**/*.rb', __FILE__)].each do |f|
   require f
 end
 
+require './app/controllers/ApplicationController'
+
 Dir[File.expand_path('../../app/**/*.rb', __FILE__)].each do |f|
+  require f
+end
+
+Dir[File.expand_path('../../app/**/**/*.rb', __FILE__)].each do |f|
   require f
 end
 
@@ -23,6 +29,5 @@ end
 Dir[File.expand_path('../../fixtures/*.rb', __FILE__)].each do |f|
   require f
 end
-
 
 require './app/app'
