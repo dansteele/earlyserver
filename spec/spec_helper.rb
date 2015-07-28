@@ -1,4 +1,5 @@
 require 'pry'
 require './config/environment'
+require 'rspec'
 require 'rack/test'
-include Rack::Test::Methods
+require './app/app'

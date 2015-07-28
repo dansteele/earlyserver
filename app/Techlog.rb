@@ -42,14 +42,14 @@ class Techlog
   end
 
 
-  def show
+  def show(*args)
     @response.status = 200
     # Set headers
     # etc
     @response
   end
 
-  def index
+  def index(*args)
     @response.status = 200
     # Set headers
     # etc
