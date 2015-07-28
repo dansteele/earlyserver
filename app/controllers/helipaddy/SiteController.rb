@@ -1,4 +1,4 @@
-class SiteController < Techlog
+class Helipaddy::SiteController < Helipaddy
   def initialize obj
     super
   end
